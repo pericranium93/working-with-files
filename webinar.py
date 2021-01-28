@@ -11,7 +11,7 @@
 # file = open('001.txt')
 # lines = file.readlines()
 # for line in lines:
-# 	print(line.strip())  # убирает спецсимволы из текста (/n и т.д.)
+# 	print(line.strip())   # убирает спецсимволы из текста (/n и т.д.)
 # file.close()  # необходимо всегда закрывать файл после окончания работы с ним
 #
 # file = open('001.txt')
@@ -65,14 +65,14 @@
 # finally:			# еще один элемент try-except, который будет выполнен независимот от результат
 # 	f_obj.close()
 
-# with open('001.txt', 'r+', encoding='utf-8) as f:  # в кодировке utf-8
-# print(f.tell())  # позволяет увидеть где находится курсор
-# print(f.read())
-# print(f.tell())
-# f.write('\n\nzxc\nnzxc\nzxc')
-# print(f.tell())
-# print(f.read())
-# f.seek(0)  # перемещает курсор в начало файла
+# with open('001.txt', 'r+', encoding='utf-8') as f:  # в кодировке utf-8
+# 	print(f.tell())  # позволяет увидеть где находится курсор
+# 	print(f.read())
+# 	print(f.tell())
+# 	f.write('\n\nzxc\nnzxc\nzxc')
+# 	print(f.tell())
+# 	print(f.read())
+# 	f.seek(0)  # перемещает курсор в начало файла
 
 # with open('001.txt', 'r+') as f:
 # 	print('необычная работа функции', file=f)
@@ -90,11 +90,11 @@ import os
 # file_name = 'webinar1.py'
 # print(os.path.join(main_folder, folder, file_name))
 
-import json
-
-data = {'income': {'salary': 5000, 'bonus': 2000}}  # создание и импорт в json
-with open('Vova.json', 'w', encoding='utf-8') as f_json:  # для работы кириллицы
-	json.dump(data, f_json, ensure_ascii=False)
+# import json
+#
+# data = {'income': {'salary': 5000, 'bonus': 2000}}  # создание и импорт в json
+# with open('Vova.json', 'w', encoding='utf-8') as f_json:  # для работы кириллицы
+#     json.dump(data, f_json, ensure_ascii=False)
 
 # with open('Vova.json') as f_json:  # импорт из json
 # 	data_1 = json.load(f_json)
@@ -115,5 +115,9 @@ import sys
 
 # sys.argv
 # sys.path
-sys.exit(3)  # меняет код выхода
-print('qwe')  # не исполняется, т.к. ранее скрипт был завершен
+# sys.exit(3)  # меняет код выхода
+# print('qwe')  # не исполняется, т.к. ранее скрипт был завершен
+
+
+i = 23
+print(i % 10)
