@@ -1,6 +1,7 @@
 if __name__ == '__main__':
     with open('task2.txt', encoding='utf-8') as file:
         lines = file.readlines()
+        print('Количество строк:', len(lines))
         words = 0
         for num, line in enumerate(lines, 1):
             words = len(line.split())

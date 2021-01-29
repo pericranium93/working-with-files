@@ -18,6 +18,9 @@ if __name__ == '__main__':
     with open('task7.json', 'w', encoding='utf-8') as f_json:
         json.dump(total_list, f_json, ensure_ascii=False)
 
+    with open('task7.json', encoding='utf-8') as f_json:
+        print(json.load(f_json))
+
 
 
 

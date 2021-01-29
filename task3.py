@@ -10,7 +10,6 @@ if __name__ == '__main__':
         low_paying = []
         for key, val in employee.items():
             inv_employee[float(val)] = inv_employee.get(val, '') + key
-        print(inv_employee)
 
         for key in inv_employee.keys():
             if key < 20000:
